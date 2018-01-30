@@ -3,8 +3,8 @@ composer.lock
 composer.phar
 /vendor/
 /tests/
+LICENSE
 README.md
 phpunit.xml.dist
 .coveralls.yml
 .travis.yml
-
