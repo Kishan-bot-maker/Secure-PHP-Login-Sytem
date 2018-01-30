@@ -1,5 +1,5 @@
 {
-    "name": "akbarhashmi/secure-php-login-system",
+    "name": "nenglish7/superbcms",
     "type": "project",
     "keywords": [
         "php-project",
@@ -20,21 +20,15 @@
         "php7-1",
         "php7-2"
     ],
-    "description": "A simple, fast, and secure PHP login system with user registration.",
-    "homepage": "https://github.com/akbarhashmi/Secure-PHP-Login-System",
+    "description": "A fast and secure by default content management system.",
+    "homepage": "Nenglish7/SuperBCMS",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Akbar Hashmi",
-            "homepage": "https://github.com/akbarhashmi",
-            "email": "me@akbarhashmi.com",
-            "role": "Owner"
-        },
         {
             "name": "Nicholas English",
             "homepage": "https://github.com/Nenglish7",
             "email": "nenglish0820@outlook.com",
-            "role": "Contributor"
+            "role": "Owner"
         }
     ],
     "require": {
@@ -49,8 +43,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Akbarhashmi\\Engine\\": "./engine",
-            "Akbarhashmi\\App\\": "./app"
+            "Nenglish7\\Engine\\": "./engine",
+            "Nenglish7\\App\\": "./app"
         }
     },
     "require-dev": {
