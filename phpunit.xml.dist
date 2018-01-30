@@ -19,6 +19,7 @@
             <directory>./engine</directory>
             <exclude>
                 <directory>./vendor</directory>
+                <directory>./views</directory>
                 <directory>./tests</directory>
             </exclude>
         </whitelist>
