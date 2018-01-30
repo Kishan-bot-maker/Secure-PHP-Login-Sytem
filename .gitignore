@@ -1,0 +1,10 @@
+composer.json
+composer.lock
+composer.phar
+/vendor/
+/tests/
+README.md
+phpunit.xml.dist
+.coveralls.yml
+.travis.yml
+
