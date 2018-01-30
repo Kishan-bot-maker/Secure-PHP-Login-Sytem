@@ -1,6 +1,6 @@
 }
-    "name": " akbarhashmi/secure-php-login-system",
-    "type": "library",
+    "name": "akbarhashmi/secure-php-login-system",
+    "type": "project",
     "keywords": [
         "php-project",
         "login-system",
