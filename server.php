@@ -6,7 +6,7 @@
  * @author Nicholas English (Contributor) <nenglish0820@outlook.com>
  *
  * @link    <https://github.com/akbarhashmi/Secure-PHP-Login-System> Github repository.
- * @license <https://github.com/akbarhashmi/Secure-PHP-Login-Sytem/blob/master/LICENSE> MIT license.
+ * @license <https://github.com/akbarhashmi/Secure-PHP-Login-System/blob/master/LICENSE> MIT license.
  */
 
 define('SYSTEM_ROOT', __DIR__);
