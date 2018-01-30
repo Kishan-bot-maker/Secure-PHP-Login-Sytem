@@ -17,6 +17,6 @@ namespace Akbarhashmi\Engine;
 class Session implements SessionInterface
 {
   
-    use DataTypeGuard;
+    use DataTypeGuardTrait;
 
 }
