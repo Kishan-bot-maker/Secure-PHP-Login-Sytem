@@ -20,7 +20,7 @@
         "php7-1",
         "php7-2"
     ],
-    "description": "A simple, fast, and secure PHP login system with user registration",
+    "description": "A simple, fast, and secure PHP login system with user registration.",
     "homepage": "https://github.com/akbarhashmi/Secure-PHP-Login-System",
     "license": "MIT",
     "authors": [
