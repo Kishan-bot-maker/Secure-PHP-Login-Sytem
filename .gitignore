@@ -2,6 +2,7 @@ composer.json
 composer.lock
 composer.phar
 /vendor/
+/build/
 /tests/
 LICENSE
 README.md
