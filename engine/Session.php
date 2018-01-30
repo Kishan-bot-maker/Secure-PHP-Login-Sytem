@@ -9,4 +9,14 @@
  * @license <https://github.com/akbarhashmi/Secure-PHP-Login-System/blob/master/LICENSE> MIT license.
  */
 
+namespace Akbarhashmi\Engine;
 
+/**
+ * Session.
+ */
+class Session implements SessionInterface
+{
+  
+    use DataTypeGuard;
+
+}
