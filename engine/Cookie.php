@@ -94,7 +94,7 @@ class Cookie implements CookieInterface
     {
         if (isset($_COOKIE[$name]))
         {
-            // Remove the cookie from the cokie global var.
+            // Remove the cookie from the cookie global var.
             unset($_COOKIE[$name]);
             // Actual delete the cookie.
             \setcookie(
