@@ -12,7 +12,8 @@ declare(strict_types=1);
  
 namespace Akbarhashmi\Engine;
 
-use ParagonIE\Halite\{
+use ParagonIE\Halite\
+{
     Cookie as CookieController,
     Symmetric\EncryptionKey,
     HiddenString
@@ -41,7 +42,7 @@ class Cookie implements CookieInterface
         $this->cookieController = new CookieController(
             new EncryptionKey(
             new HiddenString(
-                \SECRET_KEY_THREE
+                \SECRET[2]
             )
         ));
     }
