@@ -65,6 +65,7 @@ class Container
      */
     public static function clear(): void
     {
+        // Clear the cache.
         self::$instance = \null;
     }
     
