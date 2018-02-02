@@ -6,3 +6,5 @@ phpunit.xml.dist
 .travis.yml
 /vendor/
 /tests/
+README.md
+LICENSE
