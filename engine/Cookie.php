@@ -96,7 +96,7 @@ class Cookie implements CookieInterface
         {
             // Remove the cookie from the cookie global var.
             unset($_COOKIE[$name]);
-            // Actual delete the cookie.
+            // Actually delete the cookie.
             \setcookie(
                 $name,
                 '',
