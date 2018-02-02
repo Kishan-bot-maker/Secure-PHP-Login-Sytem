@@ -12,7 +12,7 @@ declare(strict_types=1);
  
 namespace Akbarhashmi\Engine;
 
-use Pimple\Container as PimpleContainer;
+use Nenglish7\Percel\Container as PercelContainer;
 
 /**
  * Container.
@@ -21,36 +21,36 @@ class Container
 {
     
     /**
-     * @var object $instance The pimple container instance.
+     * @var object $instance The percel container instance.
      */
     private static $instance = \null;
     
     /**
      * Set the container
      *
-     * @param object|PimpleContainer The pimple container.
+     * @param object|PercelContainer The percel container.
      *
      * @return void.
      */
-    public static function setContainer(PimpleContainer $pimpleContaner): void
+    public static function setContainer(PercelContainer $percelContaner): void
     {
         // Set the container instance.
-        self::$instance = $pimpleContaner;
+        self::$instance = $percelContaner;
     }
     
     /**
      * Get the container instance.
      *
      * @throws InvalidArgumentException If the container is not an instance of the
-     *                                  pimple container. 
+     *                                  percel container. 
      *
-     * @return object|PimpleContainer Return the container instance.
+     * @return object|PercelContainer Return the container instance.
      */
     public static function getInstance()
     {
-        if (!(self::$instance instanceof PimpleContainer))
+        if (!(self::$instance instanceof PercelContainer))
         {
-            throw new Exception\InvalidArgumentException('The container is not an instance of the pimple container.');
+            throw new Exception\InvalidArgumentException('The container is not an instance of the percel container.');
         }
         // Get the container.
         return self::$instance;
