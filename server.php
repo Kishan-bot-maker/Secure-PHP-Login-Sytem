@@ -29,3 +29,19 @@ $container['database'] = function() {
     );
     return $db;
 };
+
+/* Cookie encryption is used by default by paragonie. */
+$container['cookie'] = function() {
+    $db = new Akbarhashmi\Engine\Cookie(
+        COOKIE_CONF['path'],
+        COOKIE_CONF['domain'],
+        COOKIE_CONF['secure'],
+        COOKIE_CONF['httponly']
+    );
+    return $db;
+};
+
+/* Run user application directives */
+
+/* ... */
+/* ... */
