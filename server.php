@@ -12,9 +12,20 @@ declare(strict_types=1);
 
 define('SYSTEM_ROOT', __DIR__);
 
-if (!file_exists(SYSTEM_ROOT . '/vendor/autoload.php'))
-{
-    trigger_error('You need to run composer install or else the system will not run.', E_USER_ERROR);
+if (!file_exists(SYSTEM_ROOT . '/vendor/autoload.php')) {
+    trigger_error('[LOGIN-SYSTEM-ERROR] You need the required packages installed.', E_USER_ERROR);
 }
 
 require_once SYSTEM_ROOT . '/vendor/autoload.php';
+require_once SYSTEM_ROOT . '/config/preload.php';
+
+$container = new Pimple\Container();
+
+$container['database'] = function() {
+    $db = new Akbarhashmi\Engine\Database(
+        DATABASE_CONF['driver'],
+        DATABASE_CONF['dnsDetails'],
+        MAIN_CONF['debugEnabled']
+    );
+    return $db;
+};
