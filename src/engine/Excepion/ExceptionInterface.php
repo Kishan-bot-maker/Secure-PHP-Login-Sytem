@@ -13,7 +13,7 @@ declare(strict_types=1);
 namespace Akbarhashmi\Engine\Database\Exception;
 
 /**
- * ExceptionInterface
+ * ExceptionInterface.
  */
  interface ExceptionInterface
  {
