@@ -60,6 +60,7 @@ class Database extends PDO implements DatabaseInterface
             ));  
             
         }
+        // Try to connect to the requested database server.
         try
         {
             parent::__construct(
@@ -74,6 +75,7 @@ class Database extends PDO implements DatabaseInterface
             }
         } catch (PDOException $e)
         {
+            // Prevent sensitive data from being show unless debug is enable.
             if (!$debugEnabled)
             {
                 die('Connection failed: [%private-data%]');
@@ -101,6 +103,7 @@ class Database extends PDO implements DatabaseInterface
      */
     public function __debugInfo()
     {
+        // Security Patch.
         return [];
     }
     
@@ -111,6 +114,7 @@ class Database extends PDO implements DatabaseInterface
      */
     public function __sleep(): array
     {
+        // Security Patch.
         return [];
     }
     
