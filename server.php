@@ -25,7 +25,7 @@ $container['database'] = function() {
     $db = new Akbarhashmi\Engine\Database(
         DATABASE_CONF['driver'],
         DATABASE_CONF['dnsDetails'],
-        MAIN_CONF['debugEnabled']
+        OTHER_CONF['debugEnabled']
     );
     return $db;
 };
