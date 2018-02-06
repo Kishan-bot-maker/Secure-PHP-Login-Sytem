@@ -45,6 +45,7 @@
         "paragonie/halite": "^3|^4",
         "paragonie/csp-builder": "2.3",
         "paragonie/sodium_compat": "*",
+        "pimple/pimple": "^3",
         "psr/container": "*",
         "psr/log": "*"
     },
