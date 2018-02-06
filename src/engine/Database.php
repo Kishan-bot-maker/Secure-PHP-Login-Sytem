@@ -10,15 +10,15 @@ declare(strict_types=1);
  * @license <https://github.com/akbarhashmi/Secure-PHP-Login-System/blob/master/LICENSE> MIT license.
  */
 
-namespace Akbarhashmi\Engine\Database;
+namespace Akbarhashmi\Engine;
 
 use PDOException;
 use PDO;
 
 /**
- * PDOConnect.
+ * Database.
  */
-class PDOConnect extends PDO implements DatabaseInterface
+class Database extends PDO implements DatabaseInterface
 {
     
     /**
